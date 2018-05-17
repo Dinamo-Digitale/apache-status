@@ -1,7 +1,7 @@
 # apache-status (Alpha)
 
-A command line to parse apache mod_status output. Tested with Apache/2.2.22 (Debian) and may works with other versions.
-The command provides the possibility to apply filters in user typing order
+A command line tool to parse apache mod_status output. Tested with Apache/2.2.22 (Debian) and may works with other versions.
+This tool provides the possibility to apply filters in user typing order.
 
 
 ```
