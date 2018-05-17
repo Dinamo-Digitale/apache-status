@@ -13,8 +13,8 @@ export class MethodCliOption extends CliOption {
 
         this.cliArgumentDescriptor = [ '-m', '--method' ];
         //this.choices = CliMethodsList;
-        this.help = `Filter results by the request method (${CliMethodsList.join(', ')}). Can be specified multiple times.`;
-        this.action = CliActions.append;
+        this.help = `Filter results by the request method (${CliMethodsList.join(', ')}). `;
+        this.action = CliActions.store;
 
     }
 

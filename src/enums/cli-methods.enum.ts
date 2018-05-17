@@ -7,29 +7,16 @@ export enum CliMethods {
     CONNECT = 'CONNECT',
     OPTIONS = 'OPTIONS',
     TRACE = 'TRACE',
-    PATCH = 'PATCH',
-    EXCLUDE_GET = '!GET',
-    EXCLUDE_HEAD = '!HEAD',
-    EXCLUDE_POST = '!POST',
-    EXCLUDE_PUT = '!PUT',
-    EXCLUDE_DELETE = '!DELETE',
-    EXCLUDE_CONNECT = '!CONNECT',
-    EXCLUDE_OPTIONS = '!OPTIONS',
-    EXCLUDE_TRACE = '!TRACE',
-    EXCLUDE_PATCH = '!PATCH'
+    PATCH = 'PATCH'
 }
 
-const c: Array<any> = [];
-let mergedc: Array<any> = [];
+const methodsArray: Array<string> = [];
 
 for (const method in CliMethods) {
     if (typeof method === 'string') {
-        c.push(method);
+        methodsArray.push(method);
     }
 }
 
-mergedc = c;
-mergedc = mergedc.map(el => el.replace("!", "")).filter((elem, pos) => mergedc.indexOf(elem) == pos);
-
-export const CliMethodsList = c;
-export const HttpMethodsList = c;
+export const CliMethodsList = methodsArray;
+export const HttpMethodsList = methodsArray;
