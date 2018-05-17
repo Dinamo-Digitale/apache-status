@@ -14,12 +14,12 @@ Optional arguments:
                         Filter results by the request method (GET, HEAD, POST,
                          PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH).
   -c CLIENT, --client CLIENT
-                        Filter results by client IP address network (Example: 
+                        Filter by client IP address network (Example: 
                         172.5.100.6, 172.5.100.0/32, 172.1.1.0-254). Can be 
                         specified multiple times.
-  -N, --no-null         Execlude NULL requests
+  -N, --no-null         Exclude NULL requests
   -r REQUEST, --request REQUEST
-                        Filter results by the request path (Example: *.php, 
+                        Filter by the request path (Example: *.php, 
                         /en/*/test). The Apache server-status truncates the 
                         path, so please be carful when using the options. Can 
                         be specified multiple times.
@@ -35,7 +35,7 @@ Optional arguments:
 ```
 
 
-## How to install
+## How to install as a command line tool
 ```
 $ npm install
 $ npm run build:production
