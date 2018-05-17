@@ -34,12 +34,26 @@ Optional arguments:
                         Output format: (table, raw) [default: table]
 ```
 
-
 ## How to install as a command line tool
-```
-$ npm install
-$ npm run build:production
-$ npm link
-$ apache-status --help
+```bash
+
+git clone https://github.com/Dinamo-Digitale/apache-status && cd apache-status
+npm link
+apache-status --help
+
+````
+
+## How to install for development
+
+```bash
+git clone https://github.com/Dinamo-Digitale/apache-status && cd apache-status
+npm install
+# use node_modules/ts-node to compile the project, 
+# or you can install it globally 
+# $ npm install typescript ts-node -g
+# $ ts-node src/apache-status --help
+npm install
+./node_modules/ts-node/dist/bin.js  src/apache-status --help
+apache-status --help
 ````
 
