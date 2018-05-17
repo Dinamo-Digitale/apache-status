@@ -8,9 +8,9 @@ log("Starting apache status parser");
 
 const apacheStatus = new ApacheStatusParser({
     version: `1.0.0`,
-    description: `A command line to parse apache-status output. Tested with
+    description: `A command line to parse apache mod_status output. Tested with
     Apache/2.2.22 (Debian) and may works with other versions`,
-    epilog: `SEE GITHUB PAGE (https://github.com/petronz/apache-status) FOR MORE
+    epilog: `SEE GITHUB PAGE (https://github.com/dinamo-digitale/apache-status) FOR MORE
     OPTIONS AND EXAMPLES`
 });
 
