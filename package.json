@@ -1,11 +1,14 @@
 {
   "name": "apache-status",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "dist/apache-status.js",
   "scripts": {
     "start": "node ./node_modules/ts-node/dist/bin.js ./src/apache-status.ts",
     "build:production": "./node_modules/webpack/bin/webpack.js"
+  },
+  "bin": {
+    "apache-status": "./dist/apache-status.min.js"
   },
   "keywords": [],
   "author": "",

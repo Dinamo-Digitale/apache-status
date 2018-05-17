@@ -4,6 +4,7 @@ const webpack = require('webpack');
 module.exports = {
     entry: './src/apache-status.ts',
     devtool: 'inline-source-map',
+    mode: 'production',
     module: {
         rules: [
             {
@@ -17,7 +18,7 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js']
     },
     output: {
-        filename: 'apache-status.js',
+        filename: 'apache-status.min.js',
         path: path.resolve(__dirname, 'dist')
     },
     target: "node",
