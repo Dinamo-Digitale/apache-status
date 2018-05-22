@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: './src/apache-status.ts',
-    devtool: 'inline-source-map',
+    //devtool: 'inline-source-map',
     mode: 'production',
     module: {
         rules: [
