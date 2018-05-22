@@ -52,7 +52,6 @@ npm install
 # or you can install it globally 
 # $ npm install typescript ts-node -g
 # $ ts-node src/apache-status --help
-npm install
 ./node_modules/ts-node/dist/bin.js  src/apache-status --help
 apache-status --help
 ````
