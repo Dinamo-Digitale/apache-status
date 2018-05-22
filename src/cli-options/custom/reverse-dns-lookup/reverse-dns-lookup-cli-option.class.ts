@@ -14,7 +14,7 @@ export class ReverseDnsLookupCliOption extends CliOption {
     constructor() {
         
         super();
-
+        this.setNamespace('ReverseDnsLookupCliOption');
         this.cliArgumentDescriptor = [ '-l', '--reverse-dns-lookup' ];
         this.help = `Query the DNS server to find a hostname mapped to the client IP
         address`;

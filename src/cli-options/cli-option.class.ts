@@ -53,8 +53,10 @@ export abstract class CliOption  {
     
     }
 
-    constructor() {
-        this.setNamespace(this.constructor.name);
+    constructor(namespace?: string) {
+        if (!!namespace) {
+            this.setNamespace(namespace);
+        }
     }
     /**
      * Standard string matching, return true if the string matches,

@@ -10,7 +10,7 @@ export class NoNullCliOption extends CliOption {
     constructor() {
         
         super();
-
+        this.setNamespace('NoNullCliOption');
         this.cliArgumentDescriptor = [ '-N', '--no-null' ];
         this.help = 'Execlude NULL requests';
         this.action = CliActions.storeTrue;

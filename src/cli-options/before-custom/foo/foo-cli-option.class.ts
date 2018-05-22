@@ -12,7 +12,7 @@ export class FooCliOption extends CliOption {
     constructor() {
         
         super();
-
+        this.setNamespace('FooCliOption');
         this.cliArgumentDescriptor = [ '-F', '--foo' ];
         this.help = `the foo test`;
         this.action = CliActions.append;

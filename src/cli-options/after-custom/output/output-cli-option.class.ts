@@ -8,7 +8,7 @@ export class OutputCliOption extends CliOption {
     constructor() {
         
         super();
-
+        this.setNamespace('OutputCliOption');
         this.cliArgumentDescriptor = ['-o','--output'];
         this.defaultValue = 'table';
         this.help = `Output format: (table, raw) [default: table]`;
