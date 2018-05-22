@@ -10,7 +10,7 @@ export class RequestCliOption extends CliOption {
     constructor() {
         
         super();
-
+        this.setNamespace('RequestCliOption');
         this.cliArgumentDescriptor = [ '-r', '--request' ];
         this.help = `Filter results by the request path (Example: *.php, /en/*/test).
         The Apache server-status truncates the path, so please be carful when

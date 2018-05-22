@@ -10,7 +10,7 @@ export class MethodCliOption extends CliOption {
     constructor() {
         
         super();
-
+        this.setNamespace('MethodCliOption');
         this.cliArgumentDescriptor = [ '-m', '--method' ];
         //this.choices = CliMethodsList;
         this.help = `Filter results by the request method (${CliMethodsList.join(', ')}). `;

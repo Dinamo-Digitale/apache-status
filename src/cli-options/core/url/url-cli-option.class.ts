@@ -12,6 +12,7 @@ export class UrlCliOption extends CliOption {
     constructor() {
         
         super();
+        this.setNamespace('UrlCliOption');
         this.cliArgumentDescriptor = [ '-u', '--url' ];
         this.defaultValue = 'http://locahost/server-status';
         this.help = `URL for apache server - status module page. [Default: ${this.defaultValue}]`;

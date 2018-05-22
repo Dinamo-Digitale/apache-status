@@ -13,7 +13,7 @@ export class VhostCliOption extends CliOption {
     constructor() {
         
         super();
-
+        this.setNamespace('VhostCliOption');
         this.cliArgumentDescriptor = [ '-V', '--vhost'];
         this.help = `Filter results by the target vhost (Example: example.com,
             *.example.com, example.*). Can be specified multiple times.`;

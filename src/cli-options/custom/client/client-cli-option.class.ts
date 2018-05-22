@@ -9,7 +9,7 @@ export class ClientCliOption extends CliOption {
     constructor() {
         
         super();
-
+        this.setNamespace('ClientCliOption');
         this.cliArgumentDescriptor = [ '-c', '--client' ];
         this.help = `Filter results by client IP address network (Example: 172.5.100.6, 172.5.100.0/32, 172.1.1.0-254). Can be specified multiple times.`;
         this.action = CliActions.append;
