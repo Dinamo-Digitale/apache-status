@@ -56,3 +56,6 @@ npm install
 apache-status --help
 ````
 
+## Credits 
+- [petronz] (https://github.com/petronz/apache-status)
+- [moty66] (https://github.com/moty66)
