@@ -59,7 +59,7 @@ apache-status --help
 
 ## Credits 
 
-- petronz https://github.com/petronz/apache-status
+- petronz https://github.com/petronz
 - moty66 https://github.com/moty66
 
 ## License 
